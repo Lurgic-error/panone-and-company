@@ -14,7 +14,7 @@
                     </p>
 
                     <!-- <button
-                        class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
+                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                         Place an order
                     </button> -->
                 </div>
@@ -31,7 +31,8 @@
                     <div class="service__detail mb-8">
                         <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             Trade in Fuel Products</h3>
@@ -45,16 +46,20 @@
                             ut
                             corrupti commodi.
                         </p>
-                        <button
-                            class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
+                        <!-- <button
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                             Learn More
-                        </button>
+                        </button> -->
+                        <button type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Learn
+                            More</button>
                     </div>
 
                     <div class="service__detail mb-8">
                         <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-14.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-14.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             Transportation Business</h3>
@@ -69,7 +74,7 @@
                             corrupti commodi.
                         </p>
                         <button
-                            class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                             Learn More
                         </button>
                     </div>
@@ -94,15 +99,17 @@
                             placeat. Assumenda recusandae accusantium commodi laborum.
                         </p>
 
-                        <button
-                                class="text-white cursor-pointer bg-red-600  px-4 py-2  sm:py-3 capitalize  hover:text-gray-900 hover:bg-white hover:border hover:border-red-600">know
-                                more</button>
+                        <button type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
+                            More</button>
+
                     </div>
                     <!-- Image Side -->
-                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
+                    <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                        v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                            class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                 </div>
             </div>
         </section>
@@ -130,7 +137,8 @@
                     <div class="company__detail mb-4">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-14.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-14.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3 capitalize"
                             v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bulk Oil Importers
@@ -142,18 +150,19 @@
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyOneView' })"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}"
-                            class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:py-3 sm:text-lg">Learn
+                        <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
                     <div class="company__detail mb-4 md:mb-">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-76.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-76.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Mini Supermarkets</h3>
+                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Mini Supermarkets
+                        </h3>
                         <p class="leading-normal mb-4"
                             v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
@@ -161,15 +170,15 @@
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyTwoView' })"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}"
-                            class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:py-3 sm:text-lg">Learn
+                        <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
                     <div class="company__detail mb-4 md:mb-">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-62.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-62.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3 capitalize"
                             v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Hotels</h3>
@@ -180,16 +189,16 @@
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
-                        <button @click="$router.push({ name: 'HotelsView' })"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}"
-                            class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:py-3 sm:text-lg">Learn
+                        <button @click="$router.push({ name: 'HotelsView' })" type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
 
                     <div class="company__detail mb-4 md:mb-">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-95.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-95.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3 capitalize"
                             v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bakeries</h3>
@@ -200,19 +209,20 @@
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyThreeView' })"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}"
-                            class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:py-3 sm:text-lg">Learn
+                        <button @click="$router.push({ name: 'CompanyThreeView' })" type="button"
+                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
 
                     <div class="company__detail mb-4 md:mb-">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-3.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                            <img src="../assets/imgs/PANONE-3.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Ngiloi Ulomi Enterprises</h3>
+                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Ngiloi Ulomi Enterprises
+                        </h3>
                         <p class="leading-normal mb-4"
                             v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
@@ -220,9 +230,8 @@
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyFourView' })"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}"
-                            class="inline-block bg-red-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:py-3 sm:text-lg">Learn
+                        <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
 
@@ -244,38 +253,38 @@
 
                     <div class="contact__side flex-1">
                         <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 py-8 sm:py-12 md:py-16">
-  <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold text-center">Contact Us</h3>
+                            <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold text-center">Contact Us</h3>
 
-  <form class="max-w-lg mx-auto">
-    <div class="mb-6">
-      <label class="block text-gray-700 font-bold mb-2" for="fullName">Full Name</label>
-      <input type="text" name="fullName" id="fullName"
-             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-             placeholder="Enter your full name">
-    </div>
+                            <form class="max-w-lg mx-auto">
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fullName">Full Name</label>
+                                    <input type="text" name="fullName" id="fullName"
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        placeholder="Enter your full name">
+                                </div>
 
-    <div class="mb-6">
-      <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
-      <input type="email" name="email" id="email"
-             class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-             placeholder="Enter your email">
-    </div>
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                                    <input type="email" name="email" id="email"
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        placeholder="Enter your email">
+                                </div>
 
-    <div class="mb-6">
-      <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
-      <textarea name="message" id="message" cols="30" rows="5"
-                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="Enter your message"></textarea>
-    </div>
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="5"
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        placeholder="Enter your message"></textarea>
+                                </div>
 
-    <div class="flex items-center justify-center">
-      <button type="submit"
-              class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
-        Send Message
-      </button>
-    </div>
-  </form>
-</div>
+                                <div class="flex items-center justify-center">
+                                    <button type="submit"
+                                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
 
 
                         <!-- <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20  py-8 sm:py-12 md:py-16">
