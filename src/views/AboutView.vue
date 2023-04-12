@@ -1,5 +1,5 @@
 <script setup>
-    import TheFooter from '../components/TheFooter.vue';
+    import TheFooter from '../components/TheFooterr.vue';
 </script>
 
 <template>
@@ -13,7 +13,7 @@
 
         <!-- History Section -->
         <section class="section__history py-8 sm:py-12  md:py-16 bg-slate-200">
-            <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+            <div class="container mx-auto ">
                 <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Our History</h3>
 
                 <p class="mb-4">
@@ -30,7 +30,7 @@
 
         <!-- About Us Section -->
         <section class="section__history py-8 sm:py-12  md:p">
-            <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+            <div class="container mx-auto ">
                 <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">About Us</h3>
 
                 <p class="mb-4">
@@ -72,7 +72,7 @@
 
         <!-- Ownership -->
         <section class="section__ownership py-8 sm:py-12  md:py-16 bg-slate-200">
-            <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+            <div class="container mx-auto ">
                 <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Ownership</h3>
 
                 <p class="mb-4">
@@ -113,7 +113,7 @@
 
 
         <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class=" container py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
         <div class="max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's find more that brings us together.</h2>
             <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
@@ -144,7 +144,7 @@
 
 
                     <div class="contact__side flex-1">
-                        <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20  py-8 sm:py-12 md:py-16">
+                        <div class="container mx-auto   py-8 sm:py-12 md:py-16">
                             <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Contact Us</h3>
 
                             <form>
