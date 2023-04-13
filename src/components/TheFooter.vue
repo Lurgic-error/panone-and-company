@@ -1,16 +1,16 @@
 <template>
-    <footer class="py-4 bg-white sm:py-6 md:pt-10 dark:bg-gray-800">
+    <footer class="py-4 bg-white sm:py-6 md:pt-10 ">
         <div class="container mx-auto max-w-screen-xl">
             <div class="lg:flex">
                 <div class="mb-8 lg:mb-0">
                     <a href="#" class="flex items-center mb-6">
                         <img src="../assets/imgs/logo-1.png" class="mr-3 h-8" alt="FlowBite Logo" />
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Panone &amp;
+                        <span class="self-center text-lg font-semibold whitespace-nowrap">Panone &amp;
                             Company Limited</span>
                     </a>
-                    <p class="text-gray-100 dark:text-gray-400 mb-2">Buguruni Road, Dar es salaam</p>
-                        <p class="text-gray-100 dark:text-gray-400 mb-2">Email: panone@info.go.tz</p>
-                        <p class="text-gray-100 dark:text-gray-400 mb-2">Phone: +255784658987</p>
+                    <p class="text-sm text-gray-800 mb-2 ">Buguruni Road, Dar es salaam</p>
+                        <p class="text-sm text-gray-800 mb-2">Email: panone@info.go.tz</p>
+                        <p class="text-sm text-gray-800 mb-2">Phone: +255784658987</p>
                         <div class="flex mt-4 space-x-6">
                     <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -33,21 +33,21 @@
                 </div>
                 </div>
                 <!-- grid grid-cols-2 gap-8 sm:gap-4 sm:grid-cols-3 -->
-                <div class="lg:ml-auto lg:flex  lg:gap-6">
+                <div class="lg:ml-auto md:flex  md:gap-6 md:justify-between lg:justify-start">
 
                     <div class="mb-8">
                         <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                        <ul class="text-gray-100 dark:text-gray-400">
+                        <ul class="text-sm text-gray-800">
                             <li class="mb-2">
-                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline">
+                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline text-sm">
                                     Histrory</router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline">Mission
+                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline text-sm">Mission
                                 </router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline">Vision
+                                <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline text-sm">Vision
                                 </router-link>
                             </li>
                         </ul>
@@ -55,7 +55,7 @@
 
                     <div class="mb-8">
                         <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
-                        <ul class="text-gray-100 dark:text-gray-400">
+                        <ul class="text-sm text-gray-800">
                             <li class="mb-2">
                                 <a href="#" class="hover:underline">Trade in Fuel Products</a>
                             </li>
@@ -67,39 +67,39 @@
 
 
                     <div class="mb-8">
-                        <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Other Businesses
+                        <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-sm text-gray-800 uppercase">Other Businesses
                         </h2>
-                        <ul class="text-gray-100 dark:text-gray-400">
+                        <ul class="text-gray-800">
                             <li class="mb-2">
-                                <router-link :to="{ name: 'CompanyOneView'}" class="block capitalize hover:underline">
+                                <router-link :to="{ name: 'CompanyOneView'}" class="block capitalize hover:underline text-sm">
                                     Panone Bulk Oil Importers</router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'CompanyTwoView'}" class="block capitalize hover:underline">
+                                <router-link :to="{ name: 'CompanyTwoView'}" class="block capitalize hover:underline text-sm">
                                     Panone Mini Supermarkets</router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'CompanyThreeView'}" class="block capitalize hover:underline">
+                                <router-link :to="{ name: 'CompanyThreeView'}" class="block capitalize hover:underline text-sm">
                                     Panone Bakeries</router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'HotelsView'}" class="block capitalize hover:underline">Panone
+                                <router-link :to="{ name: 'HotelsView'}" class="block capitalize hover:underline text-sm">Panone
                                     Hotels</router-link>
                             </li>
                             <li class="mb-2">
-                                <router-link :to="{ name: 'CompanyFourView'}" class="block capitalize hover:underline">
+                                <router-link :to="{ name: 'CompanyFourView'}" class="block capitalize hover:underline text-sm">
                                     Ngiloi Ulomi Enterprises</router-link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {{ new Date().getFullYear() }}
-                    <a href="#" class="hover:underline">Panone &amp; Company Limited™</a>. All Rights Reserved.
+            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <div class="text-center">
+                <span class="text-sm text-gray-900 sm:text-center">
+                    <a href="#" class="hover:underline">Copyright™</a> © {{ new Date().getFullYear() }}. All Rights Reserved.
                 </span>
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                <span class="text-sm text-gray-900 sm:text-center">
                     Developed by <a href="#" class="">Lurge</a>
                 </span>
             </div>
