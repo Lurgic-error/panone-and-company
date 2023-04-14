@@ -1,20 +1,6 @@
-<!-- Contact Us View -->
-<script setup>
-    import ContactForm from '../components/ContactForm.vue';
-import TheFooter from '../components/TheFooter.vue';
-</script>
-
 <template>
-    <div class="h-full">
-        <!-- Hero Section -->
-        <section class="section__hero h-64 md:h-72 lg:h-96 bg-blue-950 bg-url">
-            <div class="container mx-auto h-full flex justify-center items-center">
-                <h1 class="text-2xl md:text-4xl lg:text-6xl text-gray-100">Contact Us</h1>
-            </div>
-        </section>
-
-        <!-- Section Contact Us -->
-        <section class=" bg-gray-100">
+            <!-- Section Contact Us -->
+            <section class=" bg-gray-100">
             <div class="">
                 <div class="block lg:flex lg:gap-4">
                     <div
@@ -34,18 +20,8 @@ import TheFooter from '../components/TheFooter.vue';
                 </div>
             </div>
         </section>
-
-        <!-- Footer  -->
-        <TheFooter></TheFooter>
-    </div>
 </template>
 
-<style scoped>
-
-.section__hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/imgs/PANONE-6.jpg");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-</style>
+<script setup>
+import ContactForm from './ContactForm.vue';
+</script>

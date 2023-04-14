@@ -1,37 +1,68 @@
-<!-- Panone Hotels View -->
+<!-- Panone Bulk Oil Importers View -->
 <template>
     <div class="h-full">
                 <!-- Section Hero -->
-                <section class="bg-gray-100 flex items-center justify-center h-screen">
-  <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
-    <div class="md:flex md:flex-row md:justify-between">
-      <div class="md:w-1/2 mb-6 md:mb-0">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">Welcome to Panone Hotels</h1>
-        <p class="text-lg md:text-2xl text-gray-600 mb-8 leading-relaxed">Experience luxury like never before at our beautiful hotel located in the heart of the city. With top-notch amenities and exceptional service, we guarantee a memorable stay for all our guests.</p>
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 ease-in-out">Book Now</a>
-      </div>
-      <div class="md:w-1/2">
-        <img src="../assets/imgs/PANONE-62.jpg" alt="Panone Hotels" class="w-full rounded-lg shadow-xl">
-      </div>
-    </div>
-  </div>
-</section>
-
-                <!-- <section  class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
+                <section  class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
             <div class="container mx-auto h-full flex justify-center items-center px-4 sm:px-8 md:px-12 lg:px-20">
                 <div ref="hero" class="content">
-                    <h1 class="text-white text-2xl mb-4 md:text-4xl lg:text-5xl" v-animate-onscroll.repeat="'animated fadeIn'">Panone Hotels Limited</h1>
-                    <p class="text-white md:leading-loose mb-4" v-animate-onscroll.repeat="{down: 'animated fadeUp', up: 'animated fadeDown' }">
+                    <h1 class="text-white text-2xl mb-4 md:text-4xl lg:text-5xl font-bold" v-animate-onscroll.repeat="'animated fadeIn'" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Panone Hotels</h1>
+                    <p class="text-white md:leading-loose mb-4 font-semibold"  v-animate-onscroll.repeat="{down: 'animated fadeUp', up: 'animated fadeDown' }" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero necessitatibus quis quo incidunt
                         asperiores? Iure quae quia aspernatur suscipit incidunt.
                     </p>
 
+                    <!-- <button
+                        class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
+                        Place an order
+                    </button> -->
                 </div>
             </div>
-        </section> -->
+        </section>
+
+
+<!--  About Section -->
+        <section class="py-8 sm:py-12  md:py-16 ">
+            <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+                <div class="about__container md:flex md:items-center md:gap-8">
+                    <!-- Image Side -->
+                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                            <!-- <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken"> -->
+                        </div>
+
+                        <div class="about__side md:basis-3/5">
+                        <h3 class="text-xl mb-2md :mb-4 "
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInUp'}">Who We Are</h3>
+
+                            <h1 class="mb-4 text-4xl text-red-600 font-semibold" v-animate-onscroll.repeat="{down: 'animated animate__fadeInUp'}">Some Head Caption</h1>
+                        <p class="mb-4 text-justify" v-animate-onscroll.repeat="{down: 'animated animate__fadeInUp'}">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad veritatis ducimus
+                            blanditiis fugit
+                            consectetur dolore, dolores accusamus! Voluptas, veritatis? Aperiam eius aspernatur
+                            repellendus
+                            placeat. Assumenda recusandae accusantium commodi laborum.
+                        </p>
+
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <TheFooter></TheFooter>
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import TheFooter from '../components/TheFooter.vue';
 
-<style scoped></style>
+</script>
+
+<style scoped>
+
+.section__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/imgs/PANONE-62.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+</style>

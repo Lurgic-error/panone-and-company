@@ -8,8 +8,8 @@ export default {
         DEFAULT: '1rem',
         sm: '2rem',
         lg: '10rem',
-        xl: '10rem',
-        '2xl': '6rem'
+        xl: '1rem',
+        '2xl': '1rem'
       }
     }
   },

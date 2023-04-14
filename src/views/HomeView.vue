@@ -40,7 +40,7 @@
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
                             sint
-                            aperiam? 
+                            aperiam?
                         </p>
                         <!-- <button
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
@@ -63,7 +63,7 @@
                             v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
                             sint
-                            aperiam? 
+                            aperiam?
                         </p>
                         <button
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
@@ -235,8 +235,6 @@
         <section class=" bg-gray-100">
             <div class="">
                 <div class="block lg:flex lg:gap-4">
-
-
                     <div
                         class="location__side flex-1 bg-blue-950 mb-6 sm:mb-0 flex items-center justify-center h-96 lg:h-auto">
                         <iframe
@@ -244,69 +242,11 @@
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
-
                     <div class="contact__side flex-1">
-                        <div class="container mx-auto py-8 sm:py-12 md:py-16">
+                        <div class="py-8 sm:py-12 md:py-16  px-4 px-8">
                             <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold text-center">Contact Us</h3>
-
-                            <form class="max-w-lg mx-auto">
-                                <div class="mb-6">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fullName">Full Name</label>
-                                    <input type="text" name="fullName" id="fullName"
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        placeholder="Enter your full name">
-                                </div>
-
-                                <div class="mb-6">
-                                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
-                                    <input type="email" name="email" id="email"
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        placeholder="Enter your email">
-                                </div>
-
-                                <div class="mb-6">
-                                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
-                                    <textarea name="message" id="message" cols="30" rows="5"
-                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                        placeholder="Enter your message"></textarea>
-                                </div>
-
-                                <div class="flex items-center justify-center">
-                                    <button type="submit"
-                                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
+                            <ContactForm></ContactForm>
                         </div>
-
-
-                        <!-- <div class="container mx-auto  py-8 sm:py-12 md:py-16">
-                            <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Contact Us</h3>
-
-                            <form>
-                                <label class="mb-2 block" for="fullName">Full Name</label>
-                                <input type="text" name="fullName" id="fullName"
-                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
-                                    placeholder="Enter your full name">
-
-                                <label class="mb-2 block" for="email">Email</label>
-                                <input type="email" name="email" id="email"
-                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
-                                    placeholder="Enter your email">
-
-                                <label class="mb-2 block" for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="10"
-                                    class="block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
-                                    placeholder="Enter your message"></textarea>
-
-                                <button
-                                    class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-slate-50 hover:bg-red-800 hover:text-slate-200 mt-4 mb-6 sm:mb-0">
-                                    Send Message
-                                </button>
-                            </form>
-                        </div> -->
                     </div>
 
                 </div>
@@ -323,6 +263,7 @@
 onMounted,
 ref
 } from 'vue';
+import ContactForm from '../components/ContactForm.vue';
 import TheFooter from '../components/TheFooter.vue';
 
 

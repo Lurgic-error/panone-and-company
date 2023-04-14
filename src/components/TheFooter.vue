@@ -1,10 +1,10 @@
 <template>
     <footer class="py-4 bg-white sm:py-6 md:pt-10 ">
-        <div class="container mx-auto max-w-screen-xl">
+        <div class="container mx-auto max-w-screen-xl lg:px-10">
             <div class="lg:flex">
                 <div class="mb-8 lg:mb-0">
                     <a href="#" class="flex items-center mb-6">
-                        <img src="../assets/imgs/logo-1.png" class="mr-3 h-8" alt="FlowBite Logo" />
+                        <img src="../assets/imgs/logo-1.png" class="mr-1 h-8" alt="FlowBite Logo" />
                         <span class="self-center text-lg font-semibold whitespace-nowrap">Panone &amp;
                             Company Limited</span>
                     </a>

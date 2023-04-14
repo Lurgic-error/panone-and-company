@@ -18,9 +18,14 @@
                 </div>
             </div>
         </section>
+
+        <TheFooter></TheFooter>
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import TheFooter from '../components/TheFooter.vue';
+
+</script>
 
 <style scoped></style>
