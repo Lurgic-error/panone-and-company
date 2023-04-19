@@ -14,51 +14,98 @@
         <!-- Section Services -->
         <section class="py-8 sm:py-12  md:py-16 bg-gray-50">
             <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">We Offer</h3>
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl"
+                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">We Offer</h3>
 
                 <div class="md:flex md:gap-4">
                     <div class="service__detail mb-8">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             <!-- <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken"> -->
                         </div>
-                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">Trade in Fuel Products</h3>
-                        <p class="leading-normal mb-4" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
-                            sint
-                            aperiam? Voluptates architecto quos id blanditiis nobis in vitae molestiae. Sunt vel sed
-                            quidem
-                            consectetur quisquam necessitatibus dolore. Repellat libero veniam reprehenderit, nobis odio
-                            ut
-                            corrupti commodi.
+                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                            Trade in Fuel Products</h3>
+                        <p class="leading-normal mb-4"
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
+                            Panone has acquired and built a number of high end and fully equipped filling stations
+                            locating in the Kilimanjaro, Mbeya, Pwani, Arusha and Manyara regions. Our filling stations
+                            operate 24 hours each day of the week, allowing flexibility and availability of products to
+                            our Customers. We provide services to corporates as well as individual customers.
                         </p>
-                        <button
-                            class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
-                            Learn More
-                        </button>
                     </div>
 
                     <div class="service__detail mb-8">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             <!-- <img src="../assets/imgs/PANONE-14.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken"> -->
                         </div>
-                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">Transportation Business</h3>
-                        <p class="leading-normal mb-4" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
-                            sint
-                            aperiam? Voluptates architecto quos id blanditiis nobis in vitae molestiae. Sunt vel sed
-                            quidem
-                            consectetur quisquam necessitatibus dolore. Repellat libero veniam reprehenderit, nobis odio
-                            ut
-                            corrupti commodi.
+                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                            Transportation Business</h3>
+                        <p class="leading-normal mb-4"
+                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
+                            Our company provides reliable transportation solutions in Tanzania and neighboring countries
+                            for bulk petroleum & LPG supplies. The company has a fleet of 200 tankers with an experience
+                            of over 20 years. We provide extensive training to our already experienced drivers. We are
+                            able to provide full protection of our stakeholders’ valuable products by conducting regular
+                            maintenance to our fleets.
                         </p>
-                        <button
-                            class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-white hover:bg-red-800 hover:text-slate-200">
-                            Learn More
-                        </button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--  Section CTA -->
+        <section class="section__cta  bg-slate-900 py-8 sm:py-12 md:py-16">
+            <div class="container mx-auto">
+                <h1 class="text-4xl text-gray-100 text-center mb-4"
+                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                    Call To Action</h1>
+                <p class="leading-loose text-center text-gray-100 text-xl"
+                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
+                    nihil totam, neque tempora qui optio voluptates.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- About Us Section -->
+        <section class="section__history py-8 sm:py-12  md:p">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:items-center">
+
+                    <div class="hidden lg:block h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="lg:basis-3/4 lg:order-2 lg:ml-12">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Why <span class="text-red-600">Choose
+                                Us</span></h3>
+
+                        <p class="leading-loose mb-4 text-gray-900">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cum magni aliquam esse
+                            maiores. Magnam est amet impedit perspiciatis deleniti.
+                        </p>
+
+                        <ul class="">
+                            <li>
+                                <p class="text-gray-900 mb-1 flex gap-4 items-center ">
+                                    <i class="fa-light fa-square-check text-red-600"></i>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="text-gray-900 mb-1 flex gap-4 items-center ">
+                                    <i class="fa-light fa-square-check text-red-600"></i>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="text-gray-900 mb-1 flex gap-4 items-center ">
+                                    <i class="fa-light fa-square-check text-red-600"></i>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="text-gray-900 mb-1 flex gap-4 items-center ">
+                                    <i class="fa-light fa-square-check text-red-600"></i>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
 
         <!-- Section Contact Us -->
@@ -83,21 +130,21 @@
                             <form>
                                 <label class="mb-2 block" for="fullName">Full Name</label>
                                 <input type="text" name="fullName" id="fullName"
-                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
+                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-900"
                                     placeholder="Enter your full name">
 
                                 <label class="mb-2 block" for="email">Email</label>
                                 <input type="email" name="email" id="email"
-                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
+                                    class="mb-4 block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-900"
                                     placeholder="Enter your email">
 
                                 <label class="mb-2 block" for="message">Message</label>
                                 <textarea name="message" id="message" cols="30" rows="10"
-                                    class="block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-800"
+                                    class="block border border-slate-950 w-full px-4 py-2 placeholder:text-slate-900"
                                     placeholder="Enter your message"></textarea>
 
                                 <button
-                                    class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-slate-50 hover:bg-red-800 hover:text-slate-200 mt-4 mb-6 sm:mb-0">
+                                    class="bg-red-600 px-4 py-2  sm:py-3 cursor-pointer text-slate-50 hover:bg-red-900 hover:text-slate-200 mt-4 mb-6 sm:mb-0">
                                     Send Message
                                 </button>
                             </form>

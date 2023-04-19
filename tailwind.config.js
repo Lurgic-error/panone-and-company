@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', './node_modules/flowbite/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      listStyleImage: {
+        checkmark: 'url("./src/assets/imgs/checkmark.png")'
+      }
+    },
     container: {
       padding: {
         DEFAULT: '1rem',

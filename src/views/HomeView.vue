@@ -5,16 +5,14 @@
         <section class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
             <div class="container mx-auto h-full flex justify-center items-center">
                 <div ref="hero" class="content">
-                    <h1 class="text-white text-2xl mb-4 md:text-4xl lg:text-5xl "
-                        v-animate-onscroll.repeat="'animated fadeIn'">Panone &amp; Company Limited</h1>
-                    <p class="text-white md:leading-loose mb-4"
-                        v-animate-onscroll.repeat="{down: 'animated fadeUp', up: 'animated fadeDown' }">
+                    <h1 class="text-white text-2xl mb-4 md:text-4xl lg:text-5xl ">Panone &amp; Company Limited</h1>
+                    <p class="text-white md:leading-loose mb-4">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero necessitatibus quis quo incidunt
                         asperiores? Iure quae quia aspernatur suscipit incidunt.
                     </p>
 
                     <!-- <button
-                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                         Place an order
                     </button> -->
                 </div>
@@ -24,49 +22,39 @@
         <!-- Section Services -->
         <section class="py-8 sm:py-12  md:py-16 bg-gray-50">
             <div class="container mx-auto">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">Services</h3>
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl" v-on-scroll-animate="{
+                    before:'',
+                    enter:'animate__animated animate__bounceInDown animate__delay-2s'
+                }">Services</h3>
 
                 <div class="md:flex md:gap-4">
-                    <div class="service__detail mb-8">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                    <div class="service__detail mb-8 md:flex-1">
+                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950">
                             <img src="../assets/imgs/PANONE-12.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <h3 class="text-xl mb-3">
                             Trade in Fuel Products</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
-                            sint
-                            aperiam?
+                        <p class="leading-normal mb-4">
+                            The company operates several well-equipped 24-hour filling stations in various regions of Tanzania, providing services to both corporate and individual customers.
                         </p>
-                        <!-- <button
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
-                            Learn More
-                        </button> -->
                         <button type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Learn
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Learn
                             More</button>
                     </div>
 
-                    <div class="service__detail mb-8">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                    <div class="service__detail mb-8 md:flex-1">
+                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950">
                             <img src="../assets/imgs/PANONE-14.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <h3 class="text-xl mb-3">
                             Transportation Business</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft animate__delay-3s'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas autem
-                            sint
-                            aperiam?
+                        <p class="leading-normal mb-4">
+                            The company offers dependable transportation for bulk petroleum and LPG supplies in Tanzania and neighboring countries, with a fleet of 200 tankers and experienced drivers.
                         </p>
                         <button
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
                             Learn More
                         </button>
                     </div>
@@ -79,26 +67,28 @@
         <section class="py-8 sm:py-12  md:py-16 ">
             <div class="container mx-auto">
                 <div class="about__container md:flex md:items-center md:gap-4">
-                    <div class="about__side md:basis-3/5">
-                        <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInUp'}">About Us</h3>
+                    <div class="about__side md:basis-3/5 lg:mr-10">
+                        <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl">About Us</h3>
+                        <div class="">
+                            <p class="mb-4 text-justify">
+                                We are a private limited liability company, registered under laws of the republican of
+                                Tanzania that begun in 2002. Today we are one of the leading players in the market of
+                                petroleum trading and transportation across Tanzania and our neighboring countries. Our
+                                other related businesses include bulk importation of fuel products, Mini Super markets,
+                                Hotels & tyres and lubricant outlets. Our company has strived to employ and train high
+                                qualified staff in management to keep up with market dynamics.
+                            </p>
 
-                        <p class="mb-4 text-justify" v-animate-onscroll.repeat="{down: 'animated animate__fadeInUp'}">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad veritatis ducimus
-                            blanditiis fugit
-                            consectetur dolore, dolores accusamus! Voluptas, veritatis? Aperiam eius aspernatur
-                            repellendus
-                            placeat. Assumenda recusandae accusantium commodi laborum.
-                        </p>
+                            <button
+                                class="bg-white border  border-red-600 px-4 py-2  sm:py-3 cursor-pointer text-red-600 hover:bg-red-600 hover:text-white mt-4 mb-6 sm:mb-0 capitalize tracking-wider">
+                                Know More
+                            </button>
+                        </div>
 
-                        <button type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
 
                     </div>
                     <!-- Image Side -->
-                    <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                        v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                    <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5">
                         <img src="../assets/imgs/PANONE-12.jpg" alt=""
                             class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                     </div>
@@ -109,11 +99,9 @@
         <!--  Section CTA -->
         <section class="section__cta  bg-slate-800 py-8 sm:py-12 md:py-16">
             <div class="container mx-auto">
-                <h1 class="text-2xl text-gray-100 text-center mb-4"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                <h1 class="text-2xl text-gray-100 text-center mb-4">
                     Call To Action</h1>
-                <p class="leading-loose text-center text-gray-100"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                <p class="leading-loose text-center text-gray-100">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
                     nihil totam, neque tempora qui optio voluptates.
                 </p>
@@ -123,107 +111,75 @@
         <!-- Section Companies -->
         <section class="section__companies py-8 sm:py-12 md:py-16">
             <div class="container mx-auto">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl"
-                    v-animate-onscroll.repeat="{down: 'animated animate__slideInDown'}">Companies</h3>
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Companies</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="company__detail mb-4">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg">
                             <img src="../assets/imgs/PANONE-14.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bulk Oil Importers
+                        <h3 class="text-xl mb-3 capitalize">Panone Bulk Oil Importers
                         </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
+                        <p class="leading-normal mb-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
                             autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
                         <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
                     <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg">
                             <img src="../assets/imgs/PANONE-76.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Mini Supermarkets
+                        <h3 class="text-xl mb-3 capitalize">Panone Mini Supermarkets
                         </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
+                        <p class="leading-normal mb-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
                             autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
                         <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
                     <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg">
                             <img src="../assets/imgs/PANONE-62.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Hotels</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
+                        <h3 class="text-xl mb-3 capitalize">Panone Hotels</h3>
+                        <p class="leading-normal mb-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
                             autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
                         <button @click="$router.push({ name: 'HotelsView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
 
-                    <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-95.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bakeries</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
-                        </p>
-                        <button @click="$router.push({ name: 'CompanyThreeView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
-                    </div>
 
                     <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
+                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg">
                             <img src="../assets/imgs/PANONE-3.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Ngiloi Ulomi Enterprises
+                        <h3 class="text-xl mb-3 capitalize">Ngiloi Ulomi Enterprises
                         </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
+                        <p class="leading-normal mb-4">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
                             autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
                             molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
                             libero veniam reprehenderit, nobis odio ut corrupti commodi.
                         </p>
                         <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button>
                     </div>
 
@@ -286,5 +242,16 @@ import TheFooter from '../components/TheFooter.vue';
     .content>h1,
     p {
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .before-enter {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 2s ease-out;
+    }
+
+    .enter {
+        opacity: 1;
+        transform: translateY(0px);
     }
 </style>

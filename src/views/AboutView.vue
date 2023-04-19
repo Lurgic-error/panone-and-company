@@ -49,14 +49,12 @@ import TheFooter from '../components/TheFooter.vue';
                         <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">About Us</h3>
 
                         <p class="leading-loose mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptates cupiditate
-                            atque
-                            totam fugiat quisquam minus nam perspiciatis dolore suscipit, provident sint eius aperiam
-                            exercitationem dolorum nobis tenetur neque eligendi aut sapiente, minima praesentium, harum
-                            tempore
-                            quis! Accusamus sit ad sint a nihil, voluptatum inventore facere aspernatur itaque optio
-                            dolor porro
-                            aliquam veniam expedita sed! Sint culpa doloremque illo nam.
+                            We are a private limited liability company, registered under laws of the republican of
+                            Tanzania that begun in 2002. Today we are one of the leading players in the market of
+                            petroleum trading and transportation across Tanzania and our neighboring countries. Our
+                            other related businesses include bulk importation of fuel products, Mini Super markets,
+                            Hotels & tyres and lubricant outlets. Our company has strived to employ and train high
+                            qualified staff in management to keep up with market dynamics.
                         </p>
 
                         <div class="">
@@ -64,71 +62,24 @@ import TheFooter from '../components/TheFooter.vue';
                             <div class="about__mission">
                                 <h3 class="text-xl mb-1 capitalize">Our mission</h3>
                                 <p class="leading-loose mb-4">
-                                    The mission of Panone And Company Limited is to become a leading profitable
-                                    wholesale and
-                                    retail fuel company maintaining good corporate citizenship.
+                                    To become a leading profitable whole sale and retail  company by maintaining a good corporate citizenship.
                                 </p>
                             </div>
 
                             <div class="about__vision">
                                 <h3 class="text-xl mb-1 capitalize">Our Vision</h3>
                                 <p class="leading-loose mb-4">
-                                    To become the largest fuel retailer across all regions in Tanzania, through
-                                    excellent
-                                    services Provision.
+                                    To Become the largest fuel retailer and transporter across all regions in and out of Tanzania through excellent services.
                                 </p>
                             </div>
 
                             <div class="about__objectives">
-                                <h3 class="text-xl mb-1 capitalize">Our objectives</h3>
+                                <h3 class="text-xl mb-1 capitalize">Our Values</h3>
                                 <p class="leading-loose mb-4">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quas,
-                                    asperiores ullam
-                                    nam distinctio, ea cumque necessitatibus odio deserunt optio minima.
+                                    We strive to be considerate and caring towards our employees, customers and all stakeholders.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ownership -->
-        <section class="section__ownership py-8 sm:py-12  md:py-16 bg-gray-100">
-            <div class="container mx-auto ">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Ownership</h3>
-
-                <p class="leading-loose mb-4">
-                    This is a family business such that the shareholders and directors belong in the same family. This
-                    relationship is proven invaluable, and has resulted into good governance structure.
-                </p>
-
-
-                <!-- Owners -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <div class="staff__detail mb-4">
-                        <div class="h-56 w-full bg-slate-950 rounded-lg"></div>
-
-                        <h3 class="mt-4">Patrick Ngilio - Chief Executive Officer </h3>
-                    </div>
-
-                    <div class="staff__detail mb-4">
-                        <div class="h-56 w-full bg-slate-950 rounded-lg"></div>
-
-                        <h3 class="mt-4">Joel Kirai - General Manager</h3>
-                    </div>
-
-                    <div class="staff__detail mb-4">
-                        <div class="h-56 w-full bg-slate-950 rounded-lg"></div>
-
-                        <h3 class="mt-4">Boniface Muthaura - Operations Manager</h3>
-                    </div>
-
-                    <div class="staff__detail mb-4">
-                        <div class="h-56 w-full bg-slate-950 rounded-lg"></div>
-
-                        <h3 class="mt-4">Immaculate Peter - Finance Manager</h3>
                     </div>
                 </div>
             </div>

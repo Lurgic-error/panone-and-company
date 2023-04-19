@@ -13,120 +13,88 @@ import TheFooter from '../components/TheFooter.vue';
         </section>
 
         <!-- Section Companies -->
-        <section class="section__companies py-10 sm:py-16 md:py-20 py">
-            <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl" v-animate-onscroll.repeat="{down: 'animated animate__slideInDown'}">Companies</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="company__detail mb-4">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-14.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bulk Oil Importers
-                        </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
+ <section class="section__history py-8 sm:py-12  md:py-16 bg-gray-100">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:gap-8 lg:items-center">
+                    <div class="lg:basis-2/4">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Panone Bulk Oil Importers</h3>
+
+                        <p class="leading-loose mb-4">
+                            This is a registered company offering importation, warehousing and distribution of Petroleum Products across Tanzania. Panone Bulk oil Importers began operations in Dar es Salaam Tanzania with its Headquarters in Miembe Saba Pwani. Our main goal for our company is quality, efficiency and customer satisfaction. We believe customer satisfaction will bring customer loyalty. Moreover we provide “fuel anywhere & anytime at your doorstep.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
-                    </div>
-                    <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-76.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Mini Supermarkets
-                        </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
-                        </p>
-                        <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
-                    </div>
-                    <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-62.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Hotels</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
-                        </p>
-                        <button @click="$router.push({ name: 'HotelsView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
                     </div>
 
-                    <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-95.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Panone Bakeries</h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
-                        </p>
-                        <button @click="$router.push({ name: 'CompanyThreeView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
-                    </div>
-
-                    <div class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <img src="../assets/imgs/PANONE-3.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">Ngiloi Ulomi Enterprises
-                        </h3>
-                        <p class="leading-normal mb-4"
-                            v-animate-onscroll.repeat="{down: 'animated animate__slideInUp'}">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
-                        </p>
-                        <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button>
-                    </div>
-
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
                 </div>
             </div>
         </section>
 
+        <section class="section__history py-8 sm:py-12  md:py-16 bg-gray-100">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:gap-8 lg:items-center">
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    
+                    <div class="lg:basis-2/4">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Panone Mini Supermarkets</h3>
+
+                        <p class="leading-loose mb-4">
+With an enormous proven efficiency, Panone has demonstrated a continuous and glowing capacity to operate a chain of supermarkets in the Northern regions of Mainland Tanzania as well as the coast. Panone has a total of 16 retail supermarkets that operates 24/7. Panone remains uncontroverted for almost two decades. Our shops are easily accessible as they are all alongside main roads and thus friendly to passengers and the surrounding community. We also operate a baking facility that is accessible to both B2B and B2C. We are dedicated to serve out customer will high level of professionalism diligence and care. We strive to ensure we are the most preferable shopping center across the East African Region.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    
+            <section class="section__history py-8 sm:py-12  md:py-16 bg-gray-100">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:gap-8 lg:items-center">
+                    <div class="lg:basis-2/4">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Panone Hotels</h3>
+
+                        <p class="leading-loose mb-4">
+Welcome to Panone Hotels Ltd, a chain of five beautiful hotels located in the Kilimanjaro, Arusha, and Manyara regions. Our hotels provide a unique experience and inviting hospitality, surrounded by the iconic features of Kilimanjaro and Mount Meru. Panone Hotels is owned by Panone and Company Ltd, offering a range of services including indoor and outdoor dining, conference halls, accommodation units, airport transfers, tourist packages, takeaway and lunch box packages, rooftop and indoor bars, as well as massage and sauna rooms.
+                        </p>
+                    </div>
+
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                </div>
+            </div>
+        </section>
+    
+
+                    <section class="section__history py-8 sm:py-12  md:py-16 bg-gray-100">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:gap-8 lg:items-center">
+
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+
+                    <div class="lg:basis-2/4">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Ngiloi Ulomi Enterprises Ltd</h3>
+
+                        <p class="leading-loose mb-4">
+Ngiloi Ulomi Enterprises Ltd was incorporated in 2007 and is a company that provides car service supplies, lubricants, and tire outlets. With over 15 years of experience, the company prioritizes customer satisfaction and works with top producers and suppliers of high-quality products locally and internationally. It is owned by Panone and Company Ltd and operates 18 outlets on each of its filling stations, providing door-to-door services when required.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 
+
+At Panone and Company, we are committed to protecting the health and safety of our employees and stakeholders. We adhere to all HSSE laws and industry standards and provide regular training to our staff to ensure they are fully aware of their responsibilities. In addition, we conduct routine environmental impact assessments and audits to ensure full regulatory compliance. Our policies prioritize the wellbeing of our people and the environment, and we strive to make a positive impact in everything we do.
+
+         -->
+
+        
         <!--  Section CTA -->
         <section class="section__cta  bg-slate-800 py-10 sm:py-16 md:py-24">
             <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-                <h1 class="text-4xl text-gray-100 text-center mb-4" v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">Call To Action</h1>
-                <p class="leading-loose text-center text-gray-100" v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                <h1 class="text-4xl text-gray-100 text-center mb-4"
+                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                    Call To Action</h1>
+                <p class="leading-loose text-center text-gray-100"
+                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
                     nihil totam, neque tempora qui optio voluptates.
                 </p>
@@ -134,7 +102,7 @@ import TheFooter from '../components/TheFooter.vue';
         </section>
 
         <!-- Section Contact Us -->
-<ContactSection></ContactSection>
+        <ContactSection></ContactSection>
 
         <!-- Footer  -->
         <TheFooter></TheFooter>
