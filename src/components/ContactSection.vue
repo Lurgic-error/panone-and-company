@@ -11,7 +11,7 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="contact__side flex-1">
-                        <div class="py-8 sm:py-12 md:py-16  px-4 md:px-8">
+                        <div class="py-8 sm:py-12 md:py-16 ">
                             <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold text-center">Contact Us</h3>
                             <ContactForm></ContactForm>
                         </div>
