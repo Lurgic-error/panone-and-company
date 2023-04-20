@@ -3,14 +3,13 @@
 
         <!-- Section Hero -->
         <section class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
-            <div class="container mx-auto h-full flex justify-center items-center">
+            <div class="container mx-auto h-full flex  items-center">
                 <div ref="hero" class="hero__content">
-                    <h1 class="text-gray-100 text-2xl mb-4 md:text-4xl lg:text-5xl font-bold"><span
+                    <h1 class="text-gray-100 text-2xl mb-6 md:text-4xl lg:text-6xl font-bold"><span
                             class="text-red-600">Panone</span> &amp; Company
                         Limited</h1>
-                    <p class="text-gray-100 leading-loose mb-4">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero necessitatibus quis quo incidunt
-                        asperiores? Iure quae quia aspernatur suscipit incidunt.
+                    <p class="text-gray-100 leading-loose mb-4 lg:text-4xl capitalize font-semibold">
+                        We bring <span class="text-red-600"> perfection</span> with care
                     </p>
 
                     <!-- <button
