@@ -85,6 +85,18 @@
                                     class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Services</router-link>
 
                                     <router-link 
+                                :to="{
+                                    name:'ServicesView'
+                                }"
+                                    class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Social Responsibility</router-link>
+
+                                    <router-link 
+                                :to="{
+                                    name:'ServicesView'
+                                }"
+                                    class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Career</router-link>
+
+                                    <router-link 
                                     :to="{
                                         name:'ContactView'
                                     }"

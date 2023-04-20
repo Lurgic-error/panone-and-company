@@ -5,7 +5,8 @@
         <section class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
             <div class="container mx-auto h-full flex justify-center items-center">
                 <div ref="hero" class="hero__content">
-                    <h1 class="text-gray-100 text-2xl mb-4 md:text-4xl lg:text-5xl font-bold">Panone &amp; Company
+                    <h1 class="text-gray-100 text-2xl mb-4 md:text-4xl lg:text-5xl font-bold"><span
+                            class="text-red-600">Panone</span> &amp; Company
                         Limited</h1>
                     <p class="text-gray-100 leading-loose mb-4">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero necessitatibus quis quo incidunt
@@ -37,7 +38,7 @@
                             <img src="../assets/imgs/PANONE-12.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 font-semib font-semibold mt-4">
+                        <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
                             Trade in Fuel Products</h3>
                         <p class="leading-loose mb-4 text-gray-900">
                             The company operates several well-equipped 24-hour filling stations in various regions of
@@ -56,7 +57,7 @@
                             <img src="../assets/imgs/PANONE-14.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 font-semib font-semibold mt-4">
+                        <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
                             Transportation Business</h3>
                         <p class="leading-loose mb-4 text-gray-900">
                             The company offers dependable transportation for bulk petroleum and LPG supplies in Tanzania
@@ -118,7 +119,7 @@
         <!--  Section CTA -->
         <section class="section__cta  bg-slate-800 py-8 sm:py-12 md:py-16">
             <div class="container mx-auto">
-                <h1 class="text-2xl text-gray-100 text-center mb-4 font-bold">
+                <h1 class="text-center  mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl text-gray-100 font-bold">
                     Call To Action</h1>
                 <p class="leading-loose text-center text-gray-100">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
@@ -143,15 +144,15 @@
                             <img src="../assets/imgs/PANONE-14.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold">Panone Bulk Oil Importers
+                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Bulk Oil Importers
                         </h3>
-                        <!-- <p class="leading-normal mb-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
+                        <p class="leading-loose text-gray-900 mb-4">
+                            Panone Bulk oil Importers is a Tanzanian company that offers importation, warehousing, and
+                            distribution of Petroleum Products. The company is based in Miembe Saba Pwani and aims to
+                            provide quality, efficiency, and customer satisfaction. They prioritize customer
+                            satisfaction and offer fuel delivery services to customers.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
+                        <!-- <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
@@ -163,15 +164,15 @@
                             <img src="../assets/imgs/PANONE-76.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold">Panone Mini Supermarkets
+                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Mini Supermarkets
                         </h3>
-                        <!-- <p class="leading-normal mb-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
+                        <p class="leading-loose text-gray-900 mb-4">
+                            Panone Mini Supermarkets operates a chain of 16 retail supermarkets in Northern Mainland
+                            Tanzania and the coast, alongside main roads for easy accessibility. We also have a baking
+                            facility for both B2B and B2C. Our goal is to provide high-level professionalism, diligence,
+                            and care to ensure they are the most preferable shopping center in the East African Region.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
+                        <!-- <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
@@ -183,14 +184,15 @@
                             <img src="../assets/imgs/PANONE-62.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold">Panone Hotels</h3>
-                        <!-- <p class="leading-normal mb-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
+                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Hotels</h3>
+                        <p class="leading-loose text-gray-900 mb-4">
+                            Panone Hotels Ltd operates a chain of hotels in the Kilimanjaro, Arusha, and Manyara regions
+                            offering a variety of services such as dining, conference halls, accommodation, airport
+                            transfers, and tourist packages. They also provide rooftop and indoor bars, massage, and
+                            sauna rooms. Their hotels offer a tranquil environment and unique experiences for their
+                            guests to enjoy.
                         </p>
-                        <button @click="$router.push({ name: 'HotelsView' })" type="button"
+                        <!-- <button @click="$router.push({ name: 'HotelsView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
@@ -204,15 +206,15 @@
                             <img src="../assets/imgs/PANONE-3.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold">Ngiloi Ulomi Enterprises
+                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Ngiloi Ulomi Enterprises
                         </h3>
-                        <!-- <p class="leading-normal mb-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore doloremque voluptas
-                            autem sint aperiam? Voluptates architecto quos id blanditiis nobis in vitae
-                            molestiae. Sunt vel sed quidem consectetur quisquam necessitatibus dolore. Repellat
-                            libero veniam reprehenderit, nobis odio ut corrupti commodi.
+                        <p class="leading-loose text-gray-900 mb-4">
+                            Ngiloi Ulomi Enterprises Ltd is a company providing car service supplies, lubricants, and
+                            tire outlets. It prioritizes customer satisfaction and works with top producers and
+                            suppliers of high-quality products. It is owned by Panone and Company Ltd and operates 18
+                            outlets on each of its filling stations.
                         </p>
-                        <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
+                        <!-- <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
