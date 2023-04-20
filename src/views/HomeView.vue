@@ -80,7 +80,7 @@
                         <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
-                }">Who We Are</h3>
+                }">Who <span class="text-red-600">We Are</span></h3>
                         <div class="" v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
