@@ -34,7 +34,10 @@ import TheFooter from '../components/TheFooter.vue';
                         </p>
                     </div>
 
-                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-11.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                 </div>
             </div>
         </section>
@@ -44,7 +47,10 @@ import TheFooter from '../components/TheFooter.vue';
             <div class="container mx-auto ">
                 <div class="lg:flex lg:items-center">
 
-                    <div class="hidden lg:block h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="hidden lg:block h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-9.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                     <div class="lg:basis-3/4 lg:order-2 lg:ml-12">
                         <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">About Us</h3>
 
@@ -62,21 +68,24 @@ import TheFooter from '../components/TheFooter.vue';
                             <div class="about__mission">
                                 <h3 class="text-xl mb-1 capitalize">Our mission</h3>
                                 <p class="leading-loose mb-4">
-                                    To become a leading profitable whole sale and retail  company by maintaining a good corporate citizenship.
+                                    To become a leading profitable whole sale and retail company by maintaining a good
+                                    corporate citizenship.
                                 </p>
                             </div>
 
                             <div class="about__vision">
                                 <h3 class="text-xl mb-1 capitalize">Our Vision</h3>
                                 <p class="leading-loose mb-4">
-                                    To Become the largest fuel retailer and transporter across all regions in and out of Tanzania through excellent services.
+                                    To Become the largest fuel retailer and transporter across all regions in and out of
+                                    Tanzania through excellent services.
                                 </p>
                             </div>
 
                             <div class="about__objectives">
                                 <h3 class="text-xl mb-1 capitalize">Our Values</h3>
                                 <p class="leading-loose mb-4">
-                                    We strive to be considerate and caring towards our employees, customers and all stakeholders.
+                                    We strive to be considerate and caring towards our employees, customers and all
+                                    stakeholders.
                                 </p>
                             </div>
                         </div>
@@ -100,6 +109,102 @@ import TheFooter from '../components/TheFooter.vue';
             </div>
         </section>
 
+        <!-- Section Policy -->
+        <section class="section__policy py-8 sm:py-12  md:py-16 bg-slate-100">
+            <div class="container mx-auto ">
+                <div class="lg:flex lg:gap-4 lg:items-center">
+                    <div class="lg:basis-2/4">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Our Policy</h3>
+
+                        <p class="leading-loose mb-4">
+                            Panone is committed to protect our employees and stakeholders as a whole from any injury or
+                            illness.
+                            We are fully compliant with all HSSE laws and industry standards. Our staff receives regular
+                            training and
+                            are fully aware of their responsibility when it comes to health and safety
+                            We conduct environmental impact assessments and audits on a routine basic to ensure full
+                            regulatory
+                            compliance
+                        </p>
+                    </div>
+
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-7.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Social Responsibility -->
+                <section class="section__community py-8 sm:py-12 md:py-16 ">
+            <div class="container mx-auto">
+                <div class="about__container md:flex md:items-center md:gap-4">
+                    <div class="about__side md:basis-2/5 lg:mr-10">
+                        <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">Social <span class="text-red-600">Responsibility</span></h3>
+                        <div class="" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
+                            <p class="mb-1 leading-loose text-gray-900">
+                                We strive to invest in people and our communities to unlock great potential and
+                                changes in Africa. Our Key focus includes health, education, community &amp;
+                                conservation of the
+                                environment.
+                            </p>
+
+                            <button
+                                class="bg-white border  border-red-600 px-4 py-2  sm:py-3 cursor-pointer text-red-600 hover:bg-red-600 hover:text-white mt-4 mb-6 sm:mb-0 capitalize tracking-wider">
+                                Know More
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <!-- Image Side -->
+
+                    <div class="md:basis-3/5 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                            v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
+                            <img src="../assets/imgs/social-3.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                        </div>
+                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                            v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
+                            <img src="../assets/imgs/social-8.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                        </div>
+                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                            v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
+                            <img src="../assets/imgs/social-1.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                        </div>
+                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
+                            v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
+                            <img src="../assets/imgs/social-9.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- Section Contact Us -->
         <section class=" bg-gray-100">

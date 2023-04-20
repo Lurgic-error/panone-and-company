@@ -258,7 +258,7 @@
                     before:'before-enter',
                     enter:'enter'
                 }">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                            <img src="../assets/imgs/social-3.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
@@ -266,7 +266,7 @@
                     before:'before-enter',
                     enter:'enter'
                 }">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                            <img src="../assets/imgs/social-8.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
@@ -274,7 +274,7 @@
                     before:'before-enter',
                     enter:'enter'
                 }">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                            <img src="../assets/imgs/social-1.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
@@ -282,7 +282,7 @@
                     before:'before-enter',
                     enter:'enter'
                 }">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                            <img src="../assets/imgs/social-9.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
 
