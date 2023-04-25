@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '../views/AboutView.vue'
 import BaseTemplate from '../views/BaseTemplate.vue'
+import CareerView from '../views/CareerView.vue'
 import CompaniesView from '../views/CompaniesView.vue'
 import CompanyFourView from '../views/CompanyFourView.vue'
 import CompanyOneView from '../views/CompanyOneView.vue'
@@ -10,7 +11,7 @@ import ContactView from '../views/ContactView.vue'
 import HomeView from '../views/HomeView.vue'
 import HotelsView from '../views/HotelsView.vue'
 import ServicesView from '../views/ServicesView.vue'
-
+import SocialResponsibilityView from '../views/SocialResponsibilityView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -39,11 +40,25 @@ const router = createRouter({
           component: ContactView
         },
 
+        // Career Us
+        {
+          path: 'careers',
+          name: 'CareerView',
+          component: CareerView
+        },
+
         // Services View
         {
           path: 'services',
           name: 'ServicesView',
           component: ServicesView
+        },
+
+        // SocialResponsibility View
+        {
+          path: 'social-responsibility',
+          name: 'SocialResponsibilityView',
+          component: SocialResponsibilityView
         },
 
         // Companies View

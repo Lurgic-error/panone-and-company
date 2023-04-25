@@ -15,13 +15,13 @@
         <section class="py-8 sm:py-12  md:py-16 bg-gray-50">
             <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
                 <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">We Offer</h3>
+                 >We Offer</h3>
 
                 <div class="md:flex md:gap-4">
                     <div class="service__detail mb-8">
                         <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <!-- <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken"> -->
+                         >
+                            <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             Trade in Fuel Products</h3>
@@ -36,8 +36,8 @@
 
                     <div class="service__detail mb-8">
                         <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950"
-                            v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
-                            <!-- <img src="../assets/imgs/PANONE-14.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken"> -->
+                         >
+                            <img src="../assets/imgs/PANONE-4.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
                         <h3 class="text-xl mb-3" v-animate-onscroll.repeat="{down: 'animated animate__fadeInLeft'}">
                             Transportation Business</h3>
@@ -74,7 +74,10 @@
             <div class="container mx-auto ">
                 <div class="lg:flex lg:items-center">
 
-                    <div class="hidden lg:block h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="hidden lg:block h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-8.jpg" alt=""
+                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                     <div class="lg:basis-3/4 lg:order-2 lg:ml-12">
                         <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Why <span class="text-red-600">Choose
                                 Us</span></h3>
@@ -159,3 +162,13 @@
         <TheFooter></TheFooter>
     </div>
 </template>
+
+<style scoped>
+
+.section__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/imgs/PANONE-4.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>

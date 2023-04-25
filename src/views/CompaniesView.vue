@@ -24,7 +24,9 @@ import TheFooter from '../components/TheFooter.vue';
                         </p>
                     </div>
 
-                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-12.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                 </div>
             </div>
         </section>
@@ -32,7 +34,9 @@ import TheFooter from '../components/TheFooter.vue';
         <section class="section__history py-8 sm:py-12  md:py-16 bg-gray-100">
             <div class="container mx-auto ">
                 <div class="lg:flex lg:gap-8 lg:items-center">
-                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-76.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                     
                     <div class="lg:basis-2/4">
                         <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Panone Mini Supermarkets</h3>
@@ -56,7 +60,9 @@ Welcome to Panone Hotels Ltd, a chain of five beautiful hotels located in the Ki
                         </p>
                     </div>
 
-                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-62.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,7 +72,9 @@ Welcome to Panone Hotels Ltd, a chain of five beautiful hotels located in the Ki
             <div class="container mx-auto ">
                 <div class="lg:flex lg:gap-8 lg:items-center">
 
-                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4"></div>
+                    <div class="h-96 w-full bg-slate-950 rounded-lg lg:basis-2/4">
+                        <img src="../assets/imgs/PANONE-100.jpg" alt="" class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
 
                     <div class="lg:basis-2/4">
                         <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Ngiloi Ulomi Enterprises Ltd</h3>
@@ -108,3 +116,13 @@ At Panone and Company, we are committed to protecting the health and safety of o
         <TheFooter></TheFooter>
     </div>
 </template>
+
+<style scoped>
+
+.section__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/imgs/PANONE-10.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>

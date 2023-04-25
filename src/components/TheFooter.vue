@@ -36,7 +36,7 @@
                 <div class="lg:ml-auto md:flex  md:gap-6 md:justify-between lg:justify-start">
 
                     <div class="mb-8">
-                        <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                        <h2 class="mb-4 sm:mb-6  font-semibold text-sm text-gray-800 uppercase">Company</h2>
                         <ul class="text-sm text-gray-800">
                             <li class="mb-2">
                                 <router-link :to="{ name: 'AboutView'}" class="block capitalize hover:underline text-sm">
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="mb-8">
-                        <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
+                        <h2 class="mb-4 sm:mb-6  font-semibold text-sm text-gray-800 uppercase">Services</h2>
                         <ul class="text-sm text-gray-800">
                             <li class="mb-2">
                                 <a href="#" class="hover:underline">Trade in Fuel Products</a>
@@ -67,7 +67,7 @@
 
 
                     <div class="mb-8">
-                        <h2 class="mb-4 sm:mb-6 text-sm font-semibold text-sm text-gray-800 uppercase">Other Businesses
+                        <h2 class="mb-4 sm:mb-6  font-semibold text-sm text-gray-800 uppercase">Other Businesses
                         </h2>
                         <ul class="text-gray-800">
                             <li class="mb-2">

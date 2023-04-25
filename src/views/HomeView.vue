@@ -5,10 +5,10 @@
         <section class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
             <div class="container mx-auto h-full flex  items-center">
                 <div ref="hero" class="hero__content">
-                    <h1 class="text-gray-100 text-2xl mb-6 md:text-4xl lg:text-6xl font-bold"><span
+                    <h1 class="text-gray-100 text-4xl mb-6 md:text-4xl lg:text-6xl font-bold"><span
                             class="text-red-600">Panone</span> &amp; Company
                         Limited</h1>
-                    <p class="text-gray-100 leading-loose mb-4 lg:text-4xl capitalize font-semibold">
+                    <p class="text-gray-100 leading-normal mb-4 lg:text-4xl capitalize font-semibold text-2xl">
                         We bring <span class="text-red-600"> perfection</span> with care
                     </p>
 
@@ -130,31 +130,45 @@
         <!-- Section Companies -->
         <section class="section__companies py-8 sm:py-12 md:py-16 bg-gray-50">
             <div class="container mx-auto">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold" v-on-scroll-animate="{
+
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
-                }">Companies</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                }" class="company__detail md:mb-4  flex items-center">
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-6xl font-bold" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">Other <br class="hidden md:block"><span class="text-red-600">Related Businesses</span></h3>
+                    </div>
+
                     <div v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
                 }" class="company__detail mb-4 ">
                         <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg mb-4">
-                            <img src="../assets/imgs/PANONE-14.jpg" alt=""
+                            <img src="../assets/imgs/PANONE-3.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Bulk Oil Importers
+                        <h3 class="text-xl mb-3 capitalize font-semibold ">
+                            <router-link :to="{ name: 'CompanyOneView' } ">
+                                Panone Bulk Oil Importers
+                            </router-link>
                         </h3>
-                        <p class="leading-loose text-gray-900 mb-4">
+
+                        <!-- <p class="leading-loose text-gray-900 mb-4">
                             Panone Bulk oil Importers is a Tanzanian company that offers importation, warehousing, and
                             distribution of Petroleum Products. The company is based in Miembe Saba Pwani and aims to
                             provide quality, efficiency, and customer satisfaction. They prioritize customer
                             satisfaction and offer fuel delivery services to customers.
-                        </p>
+                        </p> -->
                         <!-- <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
+
                     <div v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
@@ -163,18 +177,22 @@
                             <img src="../assets/imgs/PANONE-76.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Mini Supermarkets
+                        <h3 class="text-xl mb-3 capitalize font-semibold ">
+                            <router-link :to="{ name: 'CompanyTwoView' } ">
+                                Panone Mini Supermarkets
+                            </router-link>
                         </h3>
-                        <p class="leading-loose text-gray-900 mb-4">
+                        <!-- <p class="leading-loose text-gray-900 mb-4">
                             Panone Mini Supermarkets operates a chain of 16 retail supermarkets in Northern Mainland
                             Tanzania and the coast, alongside main roads for easy accessibility. We also have a baking
                             facility for both B2B and B2C. Our goal is to provide high-level professionalism, diligence,
                             and care to ensure they are the most preferable shopping center in the East African Region.
-                        </p>
+                        </p> -->
                         <!-- <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
+
                     <div v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
@@ -183,19 +201,22 @@
                             <img src="../assets/imgs/PANONE-62.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Panone Hotels</h3>
-                        <p class="leading-loose text-gray-900 mb-4">
+                        <h3 class="text-xl mb-3 capitalize font-semibold ">
+                            <router-link :to="{ name: 'HotelsView' } ">
+                                Panone Hotels
+                            </router-link>
+                        </h3>
+                        <!-- <p class="leading-loose text-gray-900 mb-4">
                             Panone Hotels Ltd operates a chain of hotels in the Kilimanjaro, Arusha, and Manyara regions
                             offering a variety of services such as dining, conference halls, accommodation, airport
                             transfers, and tourist packages. They also provide rooftop and indoor bars, massage, and
                             sauna rooms. Their hotels offer a tranquil environment and unique experiences for their
                             guests to enjoy.
-                        </p>
+                        </p> -->
                         <!-- <button @click="$router.push({ name: 'HotelsView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->
                     </div>
-
 
                     <div v-on-scroll-animate="{
                     before:'before-enter',
@@ -205,14 +226,17 @@
                             <img src="../assets/imgs/PANONE-3.jpg" alt=""
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                         </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold text-red-600">Ngiloi Ulomi Enterprises
+                        <h3 class="text-xl mb-3 capitalize font-semibold ">
+                            <router-link :to="{ name: 'CompanyFourView' } ">
+                                Ngiloi Ulomi Enterprises
+                            </router-link>
                         </h3>
-                        <p class="leading-loose text-gray-900 mb-4">
+                        <!-- <p class="leading-loose text-gray-900 mb-4">
                             Ngiloi Ulomi Enterprises Ltd is a company providing car service supplies, lubricants, and
                             tire outlets. It prioritizes customer satisfaction and works with top producers and
                             suppliers of high-quality products. It is owned by Panone and Company Ltd and operates 18
                             outlets on each of its filling stations.
-                        </p>
+                        </p> -->
                         <!-- <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
                             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
                             More</button> -->

@@ -47,7 +47,7 @@
                     </div>
 
                     <!-- Mobile menu button -->
-                    <div class="-mr-2 flex items-center md:hidden">
+                    <div class="-mr-2 flex items-center lg:hidden">
                         <button @click="isOpen = !isOpen" type="button"
                             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
                             aria-expanded="false">
@@ -62,7 +62,7 @@
                     </div>
 
                     <!-- Desktop menu -->
-                    <div class="hidden md:block">
+                    <div class="hidden lg:block">
                         <div class="ml-4 flex items-center md:ml-6">
                             <div class="flex space-x-4">
                                 <router-link 
@@ -86,13 +86,13 @@
 
                                     <router-link 
                                 :to="{
-                                    name:'ServicesView'
+                                    name:'SocialResponsibilityView'
                                 }"
                                     class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Social Responsibility</router-link>
 
                                     <router-link 
                                 :to="{
-                                    name:'ServicesView'
+                                    name:'CareerView'
                                 }"
                                     class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Career</router-link>
 
@@ -109,7 +109,7 @@
             </div>
 
             <!-- Mobile menu -->
-            <div class="md:hidden" :class="isOpen ? 'block' : 'hidden'">
+            <div class="lg:hidden" :class="isOpen ? 'block' : 'hidden'">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <router-link 
                     :to="{
