@@ -85,10 +85,16 @@
         <section class="section__cta  bg-slate-900 py-8 sm:py-12 md:py-16">
             <div class="container mx-auto">
                 <h1 class="text-4xl text-gray-100 text-center mb-4"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                    v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
                     Call To Action</h1>
                 <p class="leading-loose text-center text-gray-100 text-xl"
-                    v-animate-onscroll.repeat="{down: 'animated animate__fadeInDown', up: 'animated animate__fadeInUp'}">
+                    v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
                     nihil totam, neque tempora qui optio voluptates.
                 </p>
@@ -106,15 +112,24 @@
                                 class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                     </div>
                     <div class="lg:basis-3/4 lg:order-2 lg:ml-12">
-                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl">Why <span class="text-red-600">Choose
+                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">Why <span class="text-red-600">Choose
                                 Us</span></h3>
 
-                        <p class="leading-loose mb-4 text-gray-900">
+                        <p class="leading-loose mb-4 text-gray-900" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cum magni aliquam esse
                             maiores. Magnam est amet impedit perspiciatis deleniti.
                         </p>
 
-                        <ul class="">
+                        <ul class="" v-on-scroll-animate="{
+                    before:'before-enter',
+                    enter:'enter'
+                }">
                             <li>
                                 <p class="text-gray-900 mb-1 flex gap-4 items-center ">
                                     <i class="fa-light fa-square-check text-red-600"></i>
@@ -198,4 +213,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.before-enter {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 2s ease-out;
+    }
+
+    .enter {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 </style>

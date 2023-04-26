@@ -26,7 +26,7 @@
                 <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
                     before:'before-enter',
                     enter:'enter'
-                }">Services</h3>
+                }">What <span class="text-red-600">We Do</span></h3>
 
                 <div class="md:flex md:gap-4 ">
                     <div class="service__detail mb-8 md:flex-1" v-on-scroll-animate="{
@@ -44,7 +44,7 @@
                             Tanzania, providing services to both corporate and individual customers.
                         </p>
                         <button type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Learn
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" @click="$router.push({ name: 'ServicesView'})">Learn
                             More</button>
                     </div>
 
@@ -63,7 +63,7 @@
                             and neighboring countries, with a fleet of 200 tankers and experienced drivers.
                         </p>
                         <button
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
+                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" @click="$router.push({ name: 'ServicesView'})">
                             Learn More
                         </button>
                     </div>
