@@ -40,7 +40,7 @@
                         <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
                             Trade in Fuel Products</h3>
                         <p class="leading-loose mb-4 text-gray-900">
-                            The company operates several well-equipped 24-hour filling stations in various regions of
+                            We operate several well-equipped 24-hour filling stations in various regions of
                             Tanzania, providing services to both corporate and individual customers.
                         </p>
                         <button type="button"
@@ -59,7 +59,7 @@
                         <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
                             Transportation Business</h3>
                         <p class="leading-loose mb-4 text-gray-900">
-                            The company offers dependable transportation for bulk petroleum and LPG supplies in Tanzania
+                            We offer dependable transportation for bulk petroleum and LPG supplies in Tanzania
                             and neighboring countries, with a fleet of 200 tankers and experienced drivers.
                         </p>
                         <button

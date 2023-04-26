@@ -39,7 +39,7 @@
                     before:'before-enter',
                     enter:'enter'
                 }">
-                            Panone has acquired and built a number of high end and fully equipped filling stations
+                            We have acquired and built a number of high end and fully equipped filling stations
                             locating in the Kilimanjaro, Mbeya, Pwani, Arusha and Manyara regions. Our filling stations
                             operate 24 hours each day of the week, allowing flexibility and availability of products to
                             our Customers. We provide services to corporates as well as individual customers.
