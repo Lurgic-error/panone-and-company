@@ -1,0 +1,63 @@
+$--colors: (
+  // 'white': #ffffff,
+  // 'black': #000000,
+  //   'primary':
+  //     (
+  //       'base': #1b3067,
+  //       50: '#eff7ff',
+  //       100: '#dbecfe',
+  //       200: '#bedeff',
+  //       300: '#92cafe',
+  //       400: '#5eacfc',
+  //       500: '#398af8',
+  //       600: '#226cee',
+  //       700: '#1b56da',
+  //       800: '#1c46b1',
+  //       900: '#1d3e8b',
+  //       950: '#1b3067'
+  //     ),
+  //   'secondary': (
+  //     'base': '#0097da',
+  //     50: '#f0f9ff',
+  //     100: '#e0f3fe',
+  //     200: '#b9e8fe',
+  //     300: '#7cd7fd',
+  //     400: '#36c4fa',
+  //     500: '#0cadeb',
+  //     600: '#0097da',
+  //     700: '#016ea3',
+  //     800: '#065d86',
+  //     900: '#0b4d6f',
+  //     950: '#07314a'
+  //   ),
+  'success':
+    (
+      'base': #21ba45
+    ),
+  'warning': (
+    'base': #f2711c
+  ),
+  'danger': (
+    'base': #db2828
+  ),
+  'error': (
+    'base': #db2828
+  ),
+  'info': (
+    'base': #5c5c5c
+  )
+);
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    // do not use same name, it will override.
+    $colors: $--colors,
+    //   $button-padding-horizontal: ("default": 50px)
+  );
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;

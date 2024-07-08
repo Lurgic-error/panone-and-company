@@ -1,386 +1,225 @@
 <template>
-    <div class="h-full">
-
-        <!-- Section Hero -->
-        <section class="h-3/4 sm:h-3/5 md:h-4/5 lg:h-full bg-slate-800 section__hero">
-            <div class="container mx-auto h-full flex  items-center">
-                <div ref="hero" class="hero__content">
-                    <h1 class="text-gray-100 text-4xl mb-6 md:text-4xl lg:text-6xl font-bold"><span
-                            class="text-red-600">Panone</span> &amp; Company
-                        Limited</h1>
-                    <p class="text-gray-100 leading-normal mb-4 lg:text-4xl capitalize font-semibold text-2xl">
-                        We bring <span class="text-red-600"> perfection</span> with care
-                    </p>
-
-                    <!-- <button
-                        class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
-                        Place an order
-                    </button> -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Services -->
-        <section class="py-8 sm:py-12  md:py-16 bg-gray-50">
-            <div class="container mx-auto">
-                <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">What <span class="text-red-600">We Do</span></h3>
-
-                <div class="md:flex md:gap-4 ">
-                    <div class="service__detail mb-8 md:flex-1" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950">
-                            <img src="../assets/imgs/PANONE-12.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
-                            Trade in Fuel Products</h3>
-                        <p class="leading-loose mb-4 text-gray-900">
-                            We operate several well-equipped 24-hour filling stations in various regions of
-                            Tanzania, providing services to both corporate and individual customers.
-                        </p>
-                        <button type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" @click="$router.push({ name: 'ServicesView'})">Learn
-                            More</button>
-                    </div>
-
-                    <div class="service__detail mb-8 md:flex-1" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                        <div class="md:h-72 md:w-full md:mb-4 md:rounded-lg md:bg-blue-950">
-                            <img src="../assets/imgs/PANONE-14.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 text-red-600 font-semibold mt-4">
-                            Transportation Business</h3>
-                        <p class="leading-loose mb-4 text-gray-900">
-                            We offer dependable transportation for bulk petroleum and LPG supplies in Tanzania
-                            and neighboring countries, with a fleet of 200 tankers and experienced drivers.
-                        </p>
-                        <button
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lgx text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" @click="$router.push({ name: 'ServicesView'})">
-                            Learn More
-                        </button>
+    <div class="">
+        <el-carousel class="" height="600px" :interval="5000">
+            <el-carousel-item v-for="item in carouselItems" :key="item"
+                class="bg-cover bg-no-repeat bg-center bg-fixed h-full"
+                :style="{ backgroundImage: `url(${item.image})` }">
+                <div class="absolute top-0 left-0 z-30 flex items-center justify-center h-full  w-full container ">
+                    <div class="py-6 bg-primary-900/40 rounded text-white px-6 w-full">
+                        <h1 class="text-xl md:text-2xl lg:text-4xl uppercase font-bold"
+                            style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">{{ item.title }}
+                        </h1>
                     </div>
                 </div>
-            </div>
-        </section>
+            </el-carousel-item>
+        </el-carousel>
 
-
-        <!-- Section About -->
-        <section class="py-8 sm:py-12  md:py-16 ">
-            <div class="container mx-auto">
-                <div class="about__container md:flex md:items-center md:gap-4">
-                    <div class="about__side md:basis-3/5 lg:mr-10">
-                        <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">Who <span class="text-red-600">We Are</span></h3>
-                        <div class="" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <p class="mb-1 leading-loose text-gray-900">
-                                We are a private limited liability company, registered under laws of the republican of
-                                Tanzania that begun in 2002. Today we are one of the leading players in the market of
-                                petroleum trading and transportation across Tanzania and our neighboring countries. Our
-                                other related businesses include bulk importation of fuel products, Mini Super markets,
-                                Hotels & tyres and lubricant outlets. Our company has strived to employ and train high
-                                qualified staff in management to keep up with market dynamics.
-                            </p>
-
-                            <button
-                                class="bg-white border  border-red-600 px-4 py-2  sm:py-3 cursor-pointer text-red-600 hover:bg-red-600 hover:text-white mt-4 mb-6 sm:mb-0 capitalize tracking-wider">
-                                Know More
-                            </button>
-                        </div>
-
-
-                    </div>
-                    <!-- Image Side -->
-                    <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                        v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                        <img src="../assets/imgs/PANONE-12.jpg" alt=""
+        <section-container>
+            <section-title>What We Do</section-title>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4">
+                <div class="grid grid-rows-subgrid row-span-3 mb-12 lg:mb-0">
+                    <div class="rounded-2xl">
+                        <img src="@/assets/imgs/PANONE-12.jpg" alt=""
                             class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                     </div>
+                    <h1 class="text-xl sm:text-2xl font-medium">Trade in Fuel Products</h1>
+                    <p class='leading-7 text-gray-500'>
+                        We operate several well-equipped 24-hour filling stations in various regions of Tanzania,
+                        providing services to both corporate and individual customers.
+                    </p>
+                </div>
+                <div class="grid grid-rows-subgrid row-span-3">
+                    <div class="rounded-2xl">
+                        <img src="@/assets/imgs/PANONE-3.jpg" alt=""
+                            class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    </div>
+                    <h1 class="text-xl sm:text-2xl font-medium">Transportation Business</h1>
+                    <p class="leading-7 text-gray-500">
+                        We offer dependable transportation for bulk petroleum and LPG supplies in Tanzania and
+                        neighboring countries, with a fleet of 200 tankers and experienced drivers.
+                    </p>
                 </div>
             </div>
-        </section>
+        </section-container>
 
-        <!--  Section CTA -->
-        <section class="section__cta  bg-slate-800 py-8 sm:py-12 md:py-16">
-            <div class="container mx-auto">
-                <h1 class="text-center  mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl text-gray-100 font-bold">
-                    Call To Action</h1>
-                <p class="leading-loose text-center text-gray-100">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores velit debitis quas maiores
-                    nihil totam, neque tempora qui optio voluptates.
-                </p>
-            </div>
-        </section>
-
-        <!-- Section Companies -->
-        <section class="section__companies py-8 sm:py-12 md:py-16 bg-gray-50">
-            <div class="container mx-auto">
-
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <div v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }" class="company__detail md:mb-4  flex items-center">
-                        <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-6xl font-bold" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">Other <br class="hidden md:block"><span class="text-red-600">Related Businesses</span></h3>
-                    </div>
-
-                    <div v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }" class="company__detail mb-4 ">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg mb-4">
-                            <img src="../assets/imgs/PANONE-3.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold ">
-                            <router-link :to="{ name: 'CompanyOneView' } ">
-                                Panone Bulk Oil Importers
-                            </router-link>
-                        </h3>
-
-                        <!-- <p class="leading-loose text-gray-900 mb-4">
-                            Panone Bulk oil Importers is a Tanzanian company that offers importation, warehousing, and
-                            distribution of Petroleum Products. The company is based in Miembe Saba Pwani and aims to
-                            provide quality, efficiency, and customer satisfaction. They prioritize customer
-                            satisfaction and offer fuel delivery services to customers.
-                        </p> -->
-                        <!-- <button @click="$router.push({ name: 'CompanyOneView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button> -->
-                    </div>
-
-                    <div v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }" class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg mb-4">
-                            <img src="../assets/imgs/PANONE-76.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold ">
-                            <router-link :to="{ name: 'CompanyTwoView' } ">
-                                Panone Mini Supermarkets
-                            </router-link>
-                        </h3>
-                        <!-- <p class="leading-loose text-gray-900 mb-4">
-                            Panone Mini Supermarkets operates a chain of 16 retail supermarkets in Northern Mainland
-                            Tanzania and the coast, alongside main roads for easy accessibility. We also have a baking
-                            facility for both B2B and B2C. Our goal is to provide high-level professionalism, diligence,
-                            and care to ensure they are the most preferable shopping center in the East African Region.
-                        </p> -->
-                        <!-- <button @click="$router.push({ name: 'CompanyTwoView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button> -->
-                    </div>
-
-                    <div v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }" class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg mb-4">
-                            <img src="../assets/imgs/PANONE-62.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold ">
-                            <router-link :to="{ name: 'HotelsView' } ">
-                                Panone Hotels
-                            </router-link>
-                        </h3>
-                        <!-- <p class="leading-loose text-gray-900 mb-4">
-                            Panone Hotels Ltd operates a chain of hotels in the Kilimanjaro, Arusha, and Manyara regions
-                            offering a variety of services such as dining, conference halls, accommodation, airport
-                            transfers, and tourist packages. They also provide rooftop and indoor bars, massage, and
-                            sauna rooms. Their hotels offer a tranquil environment and unique experiences for their
-                            guests to enjoy.
-                        </p> -->
-                        <!-- <button @click="$router.push({ name: 'HotelsView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button> -->
-                    </div>
-
-                    <div v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }" class="company__detail mb-4 md:mb-">
-                        <div class="md:h-72 md:bg-blue-950 md:mb-4 md:rounded-lg mb-4">
-                            <img src="../assets/imgs/PANONE-3.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <h3 class="text-xl mb-3 capitalize font-semibold ">
-                            <router-link :to="{ name: 'CompanyFourView' } ">
-                                Ngiloi Ulomi Enterprises
-                            </router-link>
-                        </h3>
-                        <!-- <p class="leading-loose text-gray-900 mb-4">
-                            Ngiloi Ulomi Enterprises Ltd is a company providing car service supplies, lubricants, and
-                            tire outlets. It prioritizes customer satisfaction and works with top producers and
-                            suppliers of high-quality products. It is owned by Panone and Company Ltd and operates 18
-                            outlets on each of its filling stations.
-                        </p> -->
-                        <!-- <button @click="$router.push({ name: 'CompanyFourView' })" type="button"
-                            class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-4 py-2  sm:py-3 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Know
-                            More</button> -->
-                    </div>
-
+        <section-container>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-x-12 ">
+                <div class="lg:col-span-3">
+                    <section-title>Who We Are</section-title>
+                    <section-body>
+                        We are a private limited liability company, registered under laws of the republican of Tanzania
+                        that begun in 2002. Today we are one of the leading players in the market of petroleum trading
+                        and transportation across Tanzania and our neighboring countries. Our other related businesses
+                        include bulk importation of fuel products, Mini Super markets, Hotels & tyres and lubricant
+                        outlets. Our company has strived to employ and train high qualified staff in management to keep
+                        up with market dynamics.
+                    </section-body>
+                </div>
+                <div class="lg:col-span-2  rounded-2xl">
+                    <img src="../assets/imgs/PANONE-12.jpg" alt=""
+                        class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
                 </div>
             </div>
-        </section>
+        </section-container>
 
-        <!-- Social Responsibility -->
-        <section class="section__community py-8 sm:py-12 md:py-16">
-            <div class="container mx-auto">
-                <div class="about__container md:flex md:items-center md:gap-4">
-                    <div class="about__side md:basis-2/5 lg:mr-10">
-                        <h3 class="mb-4 md:mb-6 text-3xl md:text-4xl text-gray-900 font-bold" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">Social <span class="text-red-600">Responsibility</span></h3>
-                        <div class="" v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <p class="mb-1 leading-loose text-gray-900">
-                                We strive to invest in people and our communities to unlock great potential and
-                                changes in Africa. Our Key focus includes health, education, community &amp;
-                                conservation of the
-                                environment.
-                            </p>
+        <section-container>
+            <section-title>Related Business</section-title>
 
-                            <button
-                                class="bg-white border  border-red-600 px-4 py-2  sm:py-3 cursor-pointer text-red-600 hover:bg-red-600 hover:text-white mt-4 mb-6 sm:mb-0 capitalize tracking-wider">
-                                Know More
-                            </button>
-                        </div>
-
-
-                    </div>
-                    <!-- Image Side -->
-
-                    <div class="md:basis-3/5 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                            v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <img src="../assets/imgs/social-3.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                            v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <img src="../assets/imgs/social-8.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                            v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <img src="../assets/imgs/social-1.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-                        <div class="image__side md:h-72 md:w-full md:rounded-lg md:bg-blue-950  md:basis-2/5"
-                            v-on-scroll-animate="{
-                    before:'before-enter',
-                    enter:'enter'
-                }">
-                            <img src="../assets/imgs/social-9.jpg" alt=""
-                                class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
-                        </div>
-
-                    </div>
-
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4">
+                <div class="grid grid-rows-subgrid row-span-3 rounded-2xl" v-for="({ name, image }, id) in companies"
+                    :key='id'>
+                    <img :src="image" alt=""
+                        class="h-full w-full object-cover object-center rounded-lg bg-blend-darken">
+                    <router-link :to="{ name: 'CompaniesView' }">
+                        <h1 class="text-2xl">{{ name }}</h1>
+                    </router-link>
                 </div>
             </div>
-        </section>
+        </section-container>
 
-        <!-- Section Contact Us -->
-        <section class=" bg-gray-100">
+        <div class="overflow-hidden bg-black">
+            <section-container class="container px-6 lg:flex lg:px-8 ">
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
+                    <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">In Loving Memory of
+                            <br />
+                            Elinaike Ulomi
+                        </h2>
+                        <p class="mt-6 text-xl leading-8 text-gray-200">Elinaike Ulomi was a beacon of light, a leader
+                            whose vision and dedication transformed our company and touched the lives of everyone around
+                            her. Her legacy of excellence and compassion will forever be remembered.</p>
+                        <p class="mt-6 text-base leading-7 text-gray-200">Her tireless efforts and unwavering commitment
+                            to our mission have set a standard for us all. We honor her memory by continuing to strive
+                            for the values she instilled in us: integrity, perseverance, and kindness.</p>
+                    </div>
+                    <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+                        <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
+                            <img src="../assets/imgs/IMG_23.jpg" alt=""
+                                class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
+                        </div>
+                        <div
+                            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
+                            <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
+                                <img src="../assets/imgs/IMG_8.jpg" alt=""
+                                    class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
+                            </div>
+                            <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
+                                <img src="../assets/imgs/IMG_212.jpg" alt=""
+                                    class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
+                            </div>
+                            <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
+                                <img src="../assets/imgs/IMG_213.jpg" alt=""
+                                    class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section-container>
+        </div>
+
+        <section-container>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-16 sm:gap-y-24">
+                <div class="rounded">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.573249600677!2d36.657666769775396!3d-3.3762457000000037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371d5c5dbeadf3%3A0x265934fd5f3ff9e3!2sPANONE%20AND%20COMPANY%20LTD!5e0!3m2!1sen!2stz!4v1681247780686!5m2!1sen!2stz"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="">
+                    <section-title>
+                        Contact Us
+                    </section-title>
+                    <contact-form></contact-form>
+                </div>
+            </div>
+        </section-container>
+
+        <section-container>
             <div class="">
-                <div class="block lg:flex lg:gap-4">
-                    <div
-                        class="location__side flex-1 bg-blue-950 mb-6 sm:mb-0 flex items-center justify-center h-96 lg:h-auto">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.573249600677!2d36.657666769775396!3d-3.3762457000000037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371d5c5dbeadf3%3A0x265934fd5f3ff9e3!2sPANONE%20AND%20COMPANY%20LTD!5e0!3m2!1sen!2stz!4v1681247780686!5m2!1sen!2stz"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section-title>Our Offices</section-title>
+
+                <div
+                    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                    <div>
+                        <h3 class="border-l border-red-600 pl-6 font-semibold text-gray-900">Kilimanjaro</h3>
+                        <!-- <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+                            <p>4556 Brendan Ferry</p>
+                            <p>Kilimanjaro, CA 90210</p>
+                        </address> -->
                     </div>
-                    <div class="contact__side flex-1">
-                        <div class="py-8 sm:py-12 md:py-16 px-4 md:px-8">
-                            <h3 class="mb-4 md:mb-6 lg:mb-10 text-3xl md:text-4xl font-bold text-center">Contact Us</h3>
-                            <ContactForm></ContactForm>
-                        </div>
+                    <div>
+                        <h3 class="border-l border-red-600 pl-6 font-semibold text-gray-900">Arusha</h3>
+                        <!-- <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+                            <p>886 Walter Street</p>
+                            <p>Arusha, NY 12345</p>
+                        </address> -->
+                    </div>
+                    <div>
+                        <h3 class="border-l border-red-600 pl-6 font-semibold text-gray-900">Dar es salaam</h3>
+                        <!-- <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+                            <p>Buguruni Road, </p>
+                            <p>Dar es salaam</p>
+                        </address> -->
                     </div>
 
                 </div>
             </div>
-        </section>
-
-        <!-- Footer -->
-        <TheFooter></TheFooter>
+        </section-container>
     </div>
 </template>
 
 <script setup>
-    import {
-onMounted,
-ref
-} from 'vue';
-import ContactForm from '../components/ContactForm.vue';
-import TheFooter from '../components/TheFooter.vue';
+import {
+reactive
+} from "vue";
+const carouselItems = reactive([
+{
+    title: "Welcome to Panone and Company Ltd - Shaping a Brighter Future", // create a CTA about Panone and Company
+    image: new URL('@/assets/imgs/PANONE-62.jpg', import.meta.url).href
+  },
+{
+    title: "Panone Bulk Oil Importers - Fueling Tanzania's Growth", // create a CTA about Panone Bulk Oil Importers
+    image: new URL('@/assets/imgs/PANONE_Trucks.jpg', import.meta.url).href
+  },
+{
+    title: "Experience Luxury and Comfort at Panone Hotels", // create a CTA about Panone Hotels
+    image: new URL('@/assets/imgs/PANONE-9.jpg', import.meta.url).href
+  },
+  {
+    title: "Ngiloi Ulomi Enterprises - Your Trusted Partner for Car Service Supplies", // create a CTA about Ngiloi Ulomi Enterprises
+    image: new URL('@/assets/imgs/PANONE-76.jpg', import.meta.url).href
+  },
+  {
+    title: "Panone Bakery - Freshness You Can Taste", // create a CTA about panone bakery 
+    image: new URL('@/assets/imgs/Bread.jpg', import.meta.url).href
+  },
+  {
+    title: "Panone Mini Supermarkets - Convenient Shopping for All Your Needs", // create a CTA about panone mini supermarkets
+    image: new URL('@/assets/imgs/PANONE-100.jpg', import.meta.url).href
+  }
+])
 
-
-    const hero = ref()
-
-    onMounted(() => {
-        hero.value.classList.add('animate__animated', 'animate__fadeIn');
-    })
+const companies = [
+    {
+        name:"Panone Bulk Oil Importers",
+        image: new URL('@/assets/imgs/PANONE_Trucks.jpg', import.meta.url).href
+    },
+    {
+        name:"Panone Mini Supermarkets",
+        image: new URL('@/assets/imgs/PANONE-76.jpg', import.meta.url).href
+    },
+    {
+        name:"Panone Hotels",
+        image: new URL('@/assets/imgs/PANONE-62.jpg', import.meta.url).href
+    },
+    {
+        name:"Ngiloi Ulomi Enterprises",
+        image: new URL('@/assets/imgs/PANONE-100.jpg', import.meta.url).href
+    },
+    {
+        name:"Panone Bakeries",
+        image: new URL('@/assets/imgs/PANONE_bakery.jpg', import.meta.url).href
+    },
+]
 </script>
-
-
-<style scoped>
-    section.section__hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/imgs/PANONE-11.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .hero__content>h1,
-    p {
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    }
-
-    .before-enter {
-        opacity: 0;
-        transform: translateY(100px);
-        transition: all 2s ease-out;
-    }
-
-    .enter {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-</style>

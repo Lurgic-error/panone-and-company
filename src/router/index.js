@@ -1,113 +1,72 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AboutView from '../views/AboutView.vue'
-import BaseTemplate from '../views/BaseTemplate.vue'
-import CareerView from '../views/CareerView.vue'
-import CompaniesView from '../views/CompaniesView.vue'
-import CompanyFourView from '../views/CompanyFourView.vue'
-import CompanyOneView from '../views/CompanyOneView.vue'
-import CompanyThreeView from '../views/CompanyThreeView.vue'
-import CompanyTwoView from '../views/CompanyTwoView.vue'
-import ContactView from '../views/ContactView.vue'
-import HomeView from '../views/HomeView.vue'
-import HotelsView from '../views/HotelsView.vue'
-import ServicesView from '../views/ServicesView.vue'
-import SocialResponsibilityView from '../views/SocialResponsibilityView.vue'
+import BaseRouterView from '../views/BaseRouterView.vue'
+import BaseView from '../views/BaseView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      component: BaseTemplate,
+      component: BaseView,
       children: [
-        // Home View
         {
           path: '',
           name: 'HomeView',
-          component: HomeView
+          component: () => import('../views/HomeView.vue')
         },
-
-        // About View
         {
           path: 'about',
           name: 'AboutView',
-          component: AboutView
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/AboutView.vue')
         },
-
-        // Contact Us
-        {
-          path: 'contact-us',
-          name: 'ContactView',
-          component: ContactView
-        },
-
-        // Career Us
-        {
-          path: 'careers',
-          name: 'CareerView',
-          component: CareerView
-        },
-
-        // Services View
         {
           path: 'services',
           name: 'ServicesView',
-          component: ServicesView
+          component: () => import('../views/ServicesView.vue')
         },
-
-        // SocialResponsibility View
         {
-          path: 'social-responsibility',
-          name: 'SocialResponsibilityView',
-          component: SocialResponsibilityView
+          path: 'careers',
+          name: 'CareersView',
+          component: () => import('../views/CareersView.vue')
         },
-
-        // Companies View
+        {
+          path: 'contacts',
+          name: 'ContactsView',
+          component: () => import('../views/ContactsView.vue')
+        },
         {
           path: 'companies',
-          name: 'CompaniesView',
-          component: CompaniesView
-        },
-
-        // Panone Bulk Oil Importers View
-        {
-          path: 'panone-bulk-oil-importers',
-          name: 'CompanyOneView',
-          component: CompanyOneView
-        },
-
-        // Panone Mini Supermarkets View
-        {
-          path: 'panone-mini-supermarkets',
-          name: 'CompanyTwoView',
-          component: CompanyTwoView
-        },
-
-        // Panone Bakeries View
-        {
-          path: 'panone-bakeries',
-          name: 'CompanyThreeView',
-          component: CompanyThreeView
-        },
-
-        // Ngiloi Ulomi Enterprise View
-        {
-          path: 'ngilio-ulomi-enterprise',
-          name: 'CompanyFourView',
-          component: CompanyFourView
-        },
-
-        // Panone Bulk Oil Importers
-        {
-          path: 'panone-bulk-oil-importers',
-          name: 'CompanyOneView',
-          component: CompanyOneView
-        },
-
-        // Panone Hotels
-        {
-          path: 'panone-hotels',
-          name: 'HotelsView',
-          component: HotelsView
+          component: BaseRouterView,
+          children: [
+            {
+              path: '',
+              name: 'CompaniesView',
+              component: () => import('../views/companies/CompaniesView.vue')
+            },
+            {
+              path: 'panone-bulk-oil-importers',
+              name: 'PanoneBulkOilImporters',
+              component: () => import('../views/companies/PanoneBulkOilImporters.vue')
+            },
+            {
+              path: 'ngilio-ulomi-enterprises',
+              name: 'NgilioUlomiEnterprises',
+              component: () => import('../views/companies/NgilioUlomiEnterprises.vue')
+            },
+            {
+              path: 'panone-hotels',
+              name: 'PanoneHotels',
+              component: () => import('../views/companies/PanoneHotels.vue')
+            },
+            {
+              path: 'panone-mini-supermarkets',
+              name: 'PanoneMiniSupermarkets',
+              component: () => import('../views/companies/PanoneMiniSupermarkets.vue')
+            }
+          ]
         }
       ]
     }

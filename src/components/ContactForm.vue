@@ -1,25 +1,103 @@
 <template>
-    <form>
-        <label class="mb-2 block" for="fullName">Full Name</label>
-        <input type="text" name="fullName" id="fullName"
-            class="mb-4 block border  border-slate-400 w-full px-4 py-2 placeholder:text-slate-800 focus:border-red-600 active:border-red-600"
-            placeholder="Enter your full name">
+    <div class="">
 
-        <label class="mb-2 block" for="email">Email</label>
-        <input type="email" name="email" id="email"
-            class="mb-4 block border  border-slate-400 w-full px-4 py-2 placeholder:text-slate-800"
-            placeholder="Enter your email">
+        <div class="">
+            <el-form style="font-size: 1rem !important" v-if="message" class="my-6" :hide-required-asterisk="true"
+                :rules="rules" label-position="top" ref="messageForm" :model="message">
+                <!-- Full Name -->
+                <el-form-item class="font-bold" style="font-size: 1rem !important" label="Full Name" prop="fullName">
+                    <template #label>
+                        <span class="capitalize text-base font-semibold leading-6 text-gray-900">Full Name</span>
+                    </template>
+                    <el-input size="large" class=" text-base font-normal" style="font-size: 1rem !important"
+                        v-model="message.fullName" placeholder="Enter your full name" />
+                </el-form-item>
 
-        <label class="mb-2 block" for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"
-            class="mb-4 block border  border-slate-400 w-full px-4 py-2 placeholder:text-slate-800"
-            placeholder="Enter your message"></textarea>
+                <!-- Email -->
+                <el-form-item class="font-bold" style="font-size: 1rem !important" label="Email" prop="email">
+                    <template #label>
+                        <span class="capitalize text-base font-semibold leading-6 text-gray-900">Email</span>
+                    </template>
 
-        <button
-            class="bg-slate-100 border  border-red-600 px-4 py-2  sm:py-3 cursor-pointer text-red-600 hover:bg-red-600 hover:text-gray-100 mt-4 mb-6 sm:mb-0 uppercase tracking-wider">
-            Send
-        </button>
-    </form>
+                    <el-input size="large" class=" text-base font-normal" style="font-size: 1rem !important"
+                        v-model="message.email" placeholder="Enter your email" />
+                </el-form-item>
+
+                <!--Phone Number -->
+                <el-form-item class="font-bold" style="font-size: 1rem !important" label="Phone Number"
+                    prop="phoneNumber">
+                    <template #label>
+                        <span class="capitalize text-base font-semibold leading-6 text-gray-900">phone number</span>
+                    </template>
+                    <el-input size="large" class=" text-base font-normal" style="font-size: 1rem !important"
+                        v-model.number="message.phoneNumber" placeholder="Enter your phone number" />
+                </el-form-item>
+
+                <!-- messge -->
+                <el-form-item class="font-bold" style="font-size: 1rem !important" label="Message" prop="message">
+                    <template #label>
+                        <span class="capitalize text-base font-semibold leading-6 text-gray-900">message</span>
+                    </template>
+                    <el-input size="large" class=" text-base font-normal" style="font-size: 1rem !important"
+                        v-model="message.message" placeholder="Enter your messge" type="textarea" :rows="5" />
+                </el-form-item>
+
+                <div class="mt-8 flex justify-end">
+                    <button type="button" @click.prevent="sendContactMessage(messageForm)"
+                        class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+                        Send Message
+                    </button>
+                </div>
+
+            </el-form>
+        </div>
+    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import {
+reactive,
+ref
+} from 'vue';
+
+    const message = reactive({
+        fullName:"",
+        phoneNumber:"",
+        email:"",
+        message:""
+    })
+
+const messageForm = ref()
+
+const rules = reactive({
+    fullName: [{
+        required: true,
+        trigger: "blur",
+        message: "Please enter your full name"
+    }],
+    email: [{
+        required: true,
+        trigger: "blur",
+        message: "Please enter your email"
+    },{
+        type:"email",
+        message:"Please enter a correct email address",
+        trigger: "blur",
+    }],
+    phoneNumber: [{
+            required: true,
+            trigger: "blur",
+            message: "Please enter your phone number"
+        },
+        {
+            type: 'number',
+            message: "Phone number can not be a string"
+        }
+    ],
+    message: [{
+        required: true,
+        trigger: "blur",
+        message: "Please enter your message"
+    }]
+})
+</script>
